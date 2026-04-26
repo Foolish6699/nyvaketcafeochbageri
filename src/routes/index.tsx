@@ -4,10 +4,12 @@ import { Star, Award, Heart, MapPin, Clock, ArrowRight, Coffee, Cake, Sparkles }
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Newsletter } from "@/components/Newsletter";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
-import rakmacka from "@/assets/menu-rakmacka.jpg";
-import banhmi from "@/assets/menu-banhmi.jpg";
-import bulle from "@/assets/menu-kanelbulle.jpg";
+import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
+import sigMacka from "@/assets/photo-macka-kaffe.jpg";
+import sigBakelse from "@/assets/photo-bakelse.jpg";
+import weeklyImg from "@/assets/photo-munkar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +39,7 @@ function HomePage() {
         <Highlights />
         <WeeklySpecial />
         <Signature />
+        <PhotoGallery />
         <Reviews />
         <NewsletterSection />
       </main>
