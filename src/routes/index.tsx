@@ -142,8 +142,8 @@ function WeeklySpecial() {
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         <img
-          src={bulle}
-          alt="Veckans special: kanelbullar med pärlsocker"
+          src={weeklyImg}
+          alt="Veckans special: nybakade munkar med kanelsocker"
           width={1024}
           height={1024}
           loading="lazy"
