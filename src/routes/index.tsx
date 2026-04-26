@@ -4,10 +4,12 @@ import { Star, Award, Heart, MapPin, Clock, ArrowRight, Coffee, Cake, Sparkles }
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Newsletter } from "@/components/Newsletter";
+import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
-import rakmacka from "@/assets/menu-rakmacka.jpg";
-import banhmi from "@/assets/menu-banhmi.jpg";
-import bulle from "@/assets/menu-kanelbulle.jpg";
+import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
+import sigMacka from "@/assets/photo-macka-kaffe.jpg";
+import sigBakelse from "@/assets/photo-bakelse.jpg";
+import weeklyImg from "@/assets/photo-munkar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,6 +39,7 @@ function HomePage() {
         <Highlights />
         <WeeklySpecial />
         <Signature />
+        <PhotoGallery />
         <Reviews />
         <NewsletterSection />
       </main>
@@ -139,8 +142,8 @@ function WeeklySpecial() {
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         <img
-          src={bulle}
-          alt="Veckans special: kanelbullar med pärlsocker"
+          src={weeklyImg}
+          alt="Veckans special: nybakade munkar med kanelsocker"
           width={1024}
           height={1024}
           loading="lazy"
@@ -174,9 +177,9 @@ function WeeklySpecial() {
 
 function Signature() {
   const dishes = [
-    { img: rakmacka, name: "Lyxig Räkmacka", price: "98 kr", note: "Husets klassiker" },
-    { img: banhmi, name: "Banh Mi", price: "89 kr", note: "Knaprig & frisk" },
-    { img: bulle, name: "Kanelbulle", price: "29 kr", note: "Nybakad varje morgon" },
+    { img: sigRakmacka, name: "Lyxig Räkmacka", price: "98 kr", note: "Husets klassiker" },
+    { img: sigMacka, name: "Husets macka & kaffe", price: "89 kr", note: "Knaprig & frisk" },
+    { img: sigBakelse, name: "Dagens bakelse", price: "55 kr", note: "Nybakad varje morgon" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-10">
