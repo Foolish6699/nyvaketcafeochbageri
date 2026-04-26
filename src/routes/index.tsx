@@ -177,9 +177,9 @@ function WeeklySpecial() {
 
 function Signature() {
   const dishes = [
-    { img: rakmacka, name: "Lyxig Räkmacka", price: "98 kr", note: "Husets klassiker" },
-    { img: banhmi, name: "Banh Mi", price: "89 kr", note: "Knaprig & frisk" },
-    { img: bulle, name: "Kanelbulle", price: "29 kr", note: "Nybakad varje morgon" },
+    { img: sigRakmacka, name: "Lyxig Räkmacka", price: "98 kr", note: "Husets klassiker" },
+    { img: sigMacka, name: "Husets macka & kaffe", price: "89 kr", note: "Knaprig & frisk" },
+    { img: sigBakelse, name: "Dagens bakelse", price: "55 kr", note: "Nybakad varje morgon" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-10">
