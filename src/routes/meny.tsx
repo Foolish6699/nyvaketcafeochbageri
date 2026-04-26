@@ -57,6 +57,7 @@ const sections: Section[] = [
     note: "Bryggt på lokalrostat kaffe",
     items: [
       { name: "Bryggkaffe", desc: "Påtår ingår", price: "32 kr", img: coffee },
+      { name: "Espresso", desc: "Kort & intensiv", price: "32 kr", img: espresso },
       { name: "Cappuccino", desc: "Krämig mjölkskum", price: "42 kr" },
       { name: "Caffè Latte", desc: "Mild & mjuk", price: "45 kr" },
       { name: "Chai Latte", desc: "Husets blandning", price: "48 kr" },
