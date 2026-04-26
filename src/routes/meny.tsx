@@ -18,7 +18,10 @@ export const Route = createFileRoute("/meny")({
   component: MenuPage,
 });
 
-const sections = [
+type MenuItem = { name: string; desc: string; price: string; img?: string; tag?: string };
+type Section = { title: string; note: string; items: MenuItem[] };
+
+const sections: Section[] = [
   {
     title: "Smörgåsar & Mackor",
     note: "Bakade på vårt eget bröd",

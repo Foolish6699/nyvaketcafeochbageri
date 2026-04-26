@@ -9,8 +9,32 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as OmOssRouteImport } from './routes/om-oss'
+import { Route as MenyRouteImport } from './routes/meny'
+import { Route as LojalitetRouteImport } from './routes/lojalitet'
+import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
 
+const OmOssRoute = OmOssRouteImport.update({
+  id: '/om-oss',
+  path: '/om-oss',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MenyRoute = MenyRouteImport.update({
+  id: '/meny',
+  path: '/meny',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LojalitetRoute = LojalitetRouteImport.update({
+  id: '/lojalitet',
+  path: '/lojalitet',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KontaktRoute = KontaktRouteImport.update({
+  id: '/kontakt',
+  path: '/kontakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +43,72 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/lojalitet': typeof LojalitetRoute
+  '/meny': typeof MenyRoute
+  '/om-oss': typeof OmOssRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/lojalitet': typeof LojalitetRoute
+  '/meny': typeof MenyRoute
+  '/om-oss': typeof OmOssRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/kontakt': typeof KontaktRoute
+  '/lojalitet': typeof LojalitetRoute
+  '/meny': typeof MenyRoute
+  '/om-oss': typeof OmOssRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/kontakt' | '/lojalitet' | '/meny' | '/om-oss'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/kontakt' | '/lojalitet' | '/meny' | '/om-oss'
+  id: '__root__' | '/' | '/kontakt' | '/lojalitet' | '/meny' | '/om-oss'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  KontaktRoute: typeof KontaktRoute
+  LojalitetRoute: typeof LojalitetRoute
+  MenyRoute: typeof MenyRoute
+  OmOssRoute: typeof OmOssRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/om-oss': {
+      id: '/om-oss'
+      path: '/om-oss'
+      fullPath: '/om-oss'
+      preLoaderRoute: typeof OmOssRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meny': {
+      id: '/meny'
+      path: '/meny'
+      fullPath: '/meny'
+      preLoaderRoute: typeof MenyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lojalitet': {
+      id: '/lojalitet'
+      path: '/lojalitet'
+      fullPath: '/lojalitet'
+      preLoaderRoute: typeof LojalitetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kontakt': {
+      id: '/kontakt'
+      path: '/kontakt'
+      fullPath: '/kontakt'
+      preLoaderRoute: typeof KontaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +121,10 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  KontaktRoute: KontaktRoute,
+  LojalitetRoute: LojalitetRoute,
+  MenyRoute: MenyRoute,
+  OmOssRoute: OmOssRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
