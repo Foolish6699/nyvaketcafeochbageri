@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Newsletter } from "@/components/Newsletter";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
-import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
+import sigRakmacka from "@/assets/photo-saffranssemla.jpg";
 import sigMacka from "@/assets/photo-brod.jpg";
 import sigBakelse from "@/assets/photo-nyckelpigor.jpg";
 
@@ -137,7 +137,7 @@ function Highlights() {
 
 function Signature() {
   const dishes = [
-    { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
+    { img: sigRakmacka, name: "Saffranssemla", note: "Säsongens favorit ur ugnen" },
     { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
     { img: sigBakelse, name: "Nyckelpigor", note: "Söta småkakor — barnens favorit" },
   ];

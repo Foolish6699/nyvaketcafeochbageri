@@ -1,5 +1,5 @@
 import photo1 from "@/assets/photo-coffee-pair.jpg";
-import photo2 from "@/assets/photo-saffranssemla.jpg";
+import photo2 from "@/assets/photo-munkar.jpg";
 import photo3 from "@/assets/photo-cake-latte.jpg";
 import photo4 from "@/assets/photo-burger.jpg";
 import photo5 from "@/assets/photo-baguette.jpg";
@@ -12,7 +12,7 @@ import { Camera } from "lucide-react";
 
 const photos = [
   { src: photo10, alt: "Laxsmörgåstårta med ägg och citron", span: "row-span-2" },
-  { src: photo2, alt: "Saffranssemlor med vaniljgrädde och florsocker" },
+  { src: photo2, alt: "Nybakade munkar i en korg" },
   { src: photo3, alt: "Caffè latte med princessbakelse" },
   { src: photo4, alt: "Hamburgare med sallad och tomat" },
   { src: photo6, alt: "Söta igelkottsbakverk med kokos" },
