@@ -5,7 +5,7 @@ import photo4 from "@/assets/photo-burger.jpg";
 import photo5 from "@/assets/photo-baguette.jpg";
 import photo6 from "@/assets/photo-igelkottar.jpg";
 import photo7 from "@/assets/photo-espresso.jpg";
-import photo8 from "@/assets/photo-nyckelpigor.jpg";
+import photo8 from "@/assets/photo-bakelse.jpg";
 import photo9 from "@/assets/photo-macka-kaffe.jpg";
 import photo10 from "@/assets/photo-laxsmorgastarta.jpg";
 import { Camera } from "lucide-react";
