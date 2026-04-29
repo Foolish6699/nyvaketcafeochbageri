@@ -139,7 +139,7 @@ function Signature() {
   const dishes = [
     { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
     { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
-    { img: sigBakelse, name: "Dagens bakelse", note: "Nybakad varje morgon" },
+    { img: sigBakelse, name: "Nyckelpigor", note: "Söta småkakor — barnens favorit" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-10">
