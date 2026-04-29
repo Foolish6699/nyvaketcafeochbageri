@@ -1,5 +1,5 @@
 import photo1 from "@/assets/photo-coffee-pair.jpg";
-import photo2 from "@/assets/photo-saffranssemla.jpg";
+import photo2 from "@/assets/photo-laxsmorgastarta.jpg";
 import photo3 from "@/assets/photo-cake-latte.jpg";
 import photo4 from "@/assets/photo-burger.jpg";
 import photo5 from "@/assets/photo-baguette.jpg";

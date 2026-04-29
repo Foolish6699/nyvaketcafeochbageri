@@ -137,7 +137,7 @@ function Highlights() {
 
 function Signature() {
   const dishes = [
-    { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
+    { img: sigRakmacka, name: "Saffranssemla", note: "Säsongens favorit ur ugnen" },
     { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
     { img: sigBakelse, name: "Nyckelpigor", note: "Söta småkakor — barnens favorit" },
   ];
