@@ -7,9 +7,8 @@ import { Newsletter } from "@/components/Newsletter";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
-import sigMacka from "@/assets/photo-macka-kaffe.jpg";
+import sigMacka from "@/assets/photo-brod.jpg";
 import sigBakelse from "@/assets/photo-bakelse.jpg";
-import weeklyImg from "@/assets/photo-munkar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +36,6 @@ function HomePage() {
       <main className="flex-1">
         <Hero />
         <Highlights />
-        <WeeklySpecial />
         <Signature />
         <PhotoGallery />
         <Reviews />
@@ -171,7 +169,7 @@ function WeeklySpecial() {
 function Signature() {
   const dishes = [
     { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
-    { img: sigMacka, name: "Husets macka & kaffe", note: "Knaprig & frisk" },
+    { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
     { img: sigBakelse, name: "Dagens bakelse", note: "Nybakad varje morgon" },
   ];
   return (
