@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { Newsletter } from "@/components/Newsletter";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
-import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
+import sigRakmacka from "@/assets/photo-saffranssemla.jpg";
 import sigMacka from "@/assets/photo-brod.jpg";
 import sigBakelse from "@/assets/photo-nyckelpigor.jpg";
 
