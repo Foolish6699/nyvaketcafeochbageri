@@ -8,7 +8,7 @@ import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
 import sigMacka from "@/assets/photo-brod.jpg";
-import sigBakelse from "@/assets/photo-bakelse.jpg";
+import sigBakelse from "@/assets/photo-nyckelpigor.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -139,7 +139,7 @@ function Signature() {
   const dishes = [
     { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
     { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
-    { img: sigBakelse, name: "Dagens bakelse", note: "Nybakad varje morgon" },
+    { img: sigBakelse, name: "Nyckelpigor", note: "Söta småkakor — barnens favorit" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-10">
