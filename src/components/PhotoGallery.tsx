@@ -18,7 +18,7 @@ const photos = [
   { src: photo6, alt: "Söta igelkottsbakverk med kokos" },
   { src: photo1, alt: "Två koppar latte i vintagekoppar", span: "row-span-2" },
   { src: photo5, alt: "Knaprig baguette på serveringsbricka" },
-  { src: photo8, alt: "Nyckelpigor — röda kakor med chokladhuvuden" },
+  { src: photo8, alt: "Bakelse och kaffe i bärnstensglas" },
   { src: photo9, alt: "Macka och kaffe på träbord" },
   { src: photo7, alt: "Espresso i vintagekopp utomhus" },
 ];
