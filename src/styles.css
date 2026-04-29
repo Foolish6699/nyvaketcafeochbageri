@@ -48,30 +48,30 @@
 :root {
   --radius: 0.875rem;
 
-  /* Warm bakery palette */
-  --background: oklch(0.97 0.018 75);
-  --foreground: oklch(0.24 0.04 40);
+  /* Warm golden bakery-display palette — inspired by amber lit pastry case */
+  --background: oklch(0.95 0.035 80);
+  --foreground: oklch(0.20 0.045 40);
 
-  --cream: oklch(0.94 0.035 78);
-  --cinnamon: oklch(0.48 0.13 45);
-  --caramel: oklch(0.62 0.14 60);
+  --cream: oklch(0.91 0.055 78);
+  --cinnamon: oklch(0.40 0.12 40);
+  --caramel: oklch(0.68 0.16 62);
 
-  --card: oklch(0.99 0.012 80);
-  --card-foreground: oklch(0.24 0.04 40);
-  --popover: oklch(0.99 0.012 80);
-  --popover-foreground: oklch(0.24 0.04 40);
+  --card: oklch(0.97 0.028 82);
+  --card-foreground: oklch(0.20 0.045 40);
+  --popover: oklch(0.97 0.028 82);
+  --popover-foreground: oklch(0.20 0.045 40);
 
-  --primary: oklch(0.48 0.13 45);
-  --primary-foreground: oklch(0.97 0.018 75);
+  --primary: oklch(0.42 0.12 40);
+  --primary-foreground: oklch(0.96 0.035 80);
 
-  --secondary: oklch(0.91 0.04 75);
-  --secondary-foreground: oklch(0.28 0.06 45);
+  --secondary: oklch(0.88 0.06 75);
+  --secondary-foreground: oklch(0.26 0.07 42);
 
-  --muted: oklch(0.93 0.025 78);
-  --muted-foreground: oklch(0.45 0.04 50);
+  --muted: oklch(0.91 0.04 78);
+  --muted-foreground: oklch(0.42 0.05 48);
 
-  --accent: oklch(0.78 0.13 70);
-  --accent-foreground: oklch(0.24 0.05 40);
+  --accent: oklch(0.74 0.16 65);
+  --accent-foreground: oklch(0.20 0.05 38);
 
   --destructive: oklch(0.55 0.2 27);
   --destructive-foreground: oklch(0.98 0.01 80);
