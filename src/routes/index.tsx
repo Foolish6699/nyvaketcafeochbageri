@@ -8,7 +8,7 @@ import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
 import sigMacka from "@/assets/photo-brod.jpg";
-import sigBakelse from "@/assets/photo-bakelse.jpg";
+import sigBakelse from "@/assets/photo-nyckelpigor.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
