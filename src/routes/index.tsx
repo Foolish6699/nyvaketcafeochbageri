@@ -7,9 +7,8 @@ import { Newsletter } from "@/components/Newsletter";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import sigRakmacka from "@/assets/photo-laxsmorgastarta.jpg";
-import sigMacka from "@/assets/photo-macka-kaffe.jpg";
+import sigMacka from "@/assets/photo-brod.jpg";
 import sigBakelse from "@/assets/photo-bakelse.jpg";
-import weeklyImg from "@/assets/photo-munkar.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +36,6 @@ function HomePage() {
       <main className="flex-1">
         <Hero />
         <Highlights />
-        <WeeklySpecial />
         <Signature />
         <PhotoGallery />
         <Reviews />
@@ -136,42 +134,11 @@ function Highlights() {
   );
 }
 
-function WeeklySpecial() {
-  return (
-    <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
-      <div className="grid lg:grid-cols-2 gap-10 items-center">
-        <img
-          src={weeklyImg}
-          alt="Veckans special: nybakade munkar med kanelsocker"
-          width={1024}
-          height={1024}
-          loading="lazy"
-          className="rounded-3xl shadow-soft w-full h-[420px] object-cover"
-        />
-        <div>
-          <span className="inline-flex items-center gap-2 rounded-full bg-accent/30 px-4 py-1.5 text-xs font-medium text-accent-foreground">
-            <Sparkles className="h-3.5 w-3.5" /> Veckans special
-          </span>
-          <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-balance">
-            Två kanelbullar & nybryggt <span className="text-primary">bryggkaffe</span>
-          </h2>
-          <p className="mt-4 text-muted-foreground text-lg">
-            Varje vecka väljer vi ut en ny favorit ur ugnen och kombinerar med
-            nybryggt kaffe. Bara att slinka in.
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Gäller t.o.m. söndag · I caféet & avhämtning
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 function Signature() {
   const dishes = [
     { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
-    { img: sigMacka, name: "Husets macka & kaffe", note: "Knaprig & frisk" },
+    { img: sigMacka, name: "Hembakat bröd", note: "Knaprig skorpa, mjuk insida" },
     { img: sigBakelse, name: "Dagens bakelse", note: "Nybakad varje morgon" },
   ];
   return (
