@@ -29,7 +29,6 @@ export function SiteFooter() {
 
         <nav className="text-sm space-y-2">
           <h4 className="font-display text-lg font-semibold mb-2">Genvägar</h4>
-          <Link to="/meny" className="block text-muted-foreground hover:text-foreground">Meny</Link>
           <Link to="/lojalitet" className="block text-muted-foreground hover:text-foreground">Stämpelkort</Link>
           <Link to="/om-oss" className="block text-muted-foreground hover:text-foreground">Om oss</Link>
           <Link to="/kontakt" className="block text-muted-foreground hover:text-foreground">Kontakt</Link>

@@ -4,7 +4,6 @@ import { Menu, X, Coffee } from "lucide-react";
 
 const links = [
   { to: "/", label: "Hem" },
-  { to: "/meny", label: "Meny" },
   { to: "/lojalitet", label: "Stämpelkort" },
   { to: "/om-oss", label: "Om oss" },
   { to: "/kontakt", label: "Kontakt" },

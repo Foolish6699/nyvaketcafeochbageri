@@ -65,10 +65,10 @@ function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
-              to="/meny"
+              to="/kontakt"
               className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-6 py-3 font-medium shadow-warm hover:opacity-90 transition"
             >
-              Se menyn <ArrowRight className="h-4 w-4" />
+              Hitta hit <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               to="/lojalitet"
@@ -88,7 +88,6 @@ function Hero() {
               <span className="font-semibold">4,8</span>
               <span className="text-muted-foreground">(135 omdömen)</span>
             </div>
-            <span className="hidden sm:inline text-muted-foreground">· 1–100 kr / pers</span>
           </div>
         </div>
 
@@ -154,7 +153,7 @@ function WeeklySpecial() {
             <Sparkles className="h-3.5 w-3.5" /> Veckans special
           </span>
           <h2 className="mt-4 font-display text-4xl sm:text-5xl font-semibold text-balance">
-            Två kanelbullar + bryggkaffe — <span className="text-primary">39 kr</span>
+            Två kanelbullar & nybryggt <span className="text-primary">bryggkaffe</span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
             Varje vecka väljer vi ut en ny favorit ur ugnen och kombinerar med
@@ -163,12 +162,6 @@ function WeeklySpecial() {
           <p className="mt-2 text-sm text-muted-foreground">
             Gäller t.o.m. söndag · I caféet & avhämtning
           </p>
-          <Link
-            to="/meny"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-foreground text-background px-6 py-3 font-medium hover:opacity-90 transition"
-          >
-            Se hela menyn <ArrowRight className="h-4 w-4" />
-          </Link>
         </div>
       </div>
     </section>
@@ -177,9 +170,9 @@ function WeeklySpecial() {
 
 function Signature() {
   const dishes = [
-    { img: sigRakmacka, name: "Lyxig Räkmacka", price: "98 kr", note: "Husets klassiker" },
-    { img: sigMacka, name: "Husets macka & kaffe", price: "89 kr", note: "Knaprig & frisk" },
-    { img: sigBakelse, name: "Dagens bakelse", price: "55 kr", note: "Nybakad varje morgon" },
+    { img: sigRakmacka, name: "Lyxig Räkmacka", note: "Husets klassiker" },
+    { img: sigMacka, name: "Husets macka & kaffe", note: "Knaprig & frisk" },
+    { img: sigBakelse, name: "Dagens bakelse", note: "Nybakad varje morgon" },
   ];
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-10">
@@ -188,9 +181,6 @@ function Signature() {
           <h2 className="font-display text-4xl sm:text-5xl font-semibold">Våra signaturer</h2>
           <p className="mt-2 text-muted-foreground">Det gästerna kommer tillbaka för.</p>
         </div>
-        <Link to="/meny" className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
-          Hela menyn <ArrowRight className="h-4 w-4" />
-        </Link>
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {dishes.map((d) => (
@@ -205,12 +195,9 @@ function Signature() {
                 className="h-full w-full object-cover group-hover:scale-105 transition duration-700"
               />
             </div>
-            <div className="p-5 flex items-start justify-between gap-4">
-              <div>
-                <h3 className="font-display text-xl font-semibold">{d.name}</h3>
-                <p className="text-sm text-muted-foreground">{d.note}</p>
-              </div>
-              <span className="rounded-full bg-secondary px-3 py-1 text-sm font-semibold">{d.price}</span>
+            <div className="p-5">
+              <h3 className="font-display text-xl font-semibold">{d.name}</h3>
+              <p className="text-sm text-muted-foreground">{d.note}</p>
             </div>
           </article>
         ))}
