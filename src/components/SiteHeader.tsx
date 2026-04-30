@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import nyvaketLogo from "@/assets/nyvaket-logo.jpg";
+import nyvaketLogo from "@/assets/nyvaket-logo.png";
 
 const links = [
   { to: "/", label: "Hem" },
