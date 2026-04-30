@@ -36,9 +36,9 @@ function AboutPage() {
               ägaren själv står vid ugnen från tidig morgon.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Doften av nybakat möter dig i dörren. Den nostalgiska inredningen,
-              vänskapen mellan stamgästerna och hundarna under borden — det är så
-              vi vill att din morgon ska kännas.
+              Doften av nybakat möter dig i dörren. Den nostalgiska inredningen
+              och vänskapen mellan stamgästerna — det är så vi vill att din
+              morgon ska kännas.
             </p>
           </div>
           <img
