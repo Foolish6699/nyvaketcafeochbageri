@@ -19,7 +19,7 @@ export function SiteHeader() {
           <img
             src={nyvaketLogo}
             alt="Nyvaket Café logotyp"
-            className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-14 w-auto object-contain transition-transform group-hover:scale-105 [filter:contrast(1.25)_saturate(1.2)_drop-shadow(0_1px_0_rgba(0,0,0,0.15))]"
           />
         </Link>
 
