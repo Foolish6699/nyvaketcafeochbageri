@@ -68,12 +68,6 @@ function Hero() {
             >
               Hitta hit <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link
-              to="/lojalitet"
-              className="inline-flex items-center rounded-full border border-border bg-background px-6 py-3 font-medium hover:bg-secondary transition"
-            >
-              Hämta stämpelkort
-            </Link>
           </div>
 
           <div className="mt-10 flex items-center gap-6 text-sm">

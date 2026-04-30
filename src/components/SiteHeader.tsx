@@ -1,10 +1,10 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { Menu, X, Coffee } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import nyvaketLogo from "@/assets/nyvaket-logo.jpg";
 
 const links = [
   { to: "/", label: "Hem" },
-  { to: "/lojalitet", label: "Stämpelkort" },
   { to: "/om-oss", label: "Om oss" },
   { to: "/kontakt", label: "Kontakt" },
 ] as const;
@@ -15,13 +15,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="grid place-items-center h-9 w-9 rounded-full bg-gradient-cinnamon text-primary-foreground shadow-soft transition-transform group-hover:rotate-12">
-            <Coffee className="h-4 w-4" />
-          </span>
-          <span className="font-display text-xl font-semibold tracking-tight">
-            Nyvaket
-          </span>
+        <Link to="/" className="flex items-center group" aria-label="Nyvaket Café — hem">
+          <img
+            src={nyvaketLogo}
+            alt="Nyvaket Café logotyp"
+            className="h-10 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">

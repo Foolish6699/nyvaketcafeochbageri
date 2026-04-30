@@ -10,18 +10,12 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as OmOssRouteImport } from './routes/om-oss'
-import { Route as LojalitetRouteImport } from './routes/lojalitet'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as IndexRouteImport } from './routes/index'
 
 const OmOssRoute = OmOssRouteImport.update({
   id: '/om-oss',
   path: '/om-oss',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LojalitetRoute = LojalitetRouteImport.update({
-  id: '/lojalitet',
-  path: '/lojalitet',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KontaktRoute = KontaktRouteImport.update({
@@ -38,34 +32,30 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
-  '/lojalitet': typeof LojalitetRoute
   '/om-oss': typeof OmOssRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
-  '/lojalitet': typeof LojalitetRoute
   '/om-oss': typeof OmOssRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/kontakt': typeof KontaktRoute
-  '/lojalitet': typeof LojalitetRoute
   '/om-oss': typeof OmOssRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/kontakt' | '/lojalitet' | '/om-oss'
+  fullPaths: '/' | '/kontakt' | '/om-oss'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/kontakt' | '/lojalitet' | '/om-oss'
-  id: '__root__' | '/' | '/kontakt' | '/lojalitet' | '/om-oss'
+  to: '/' | '/kontakt' | '/om-oss'
+  id: '__root__' | '/' | '/kontakt' | '/om-oss'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   KontaktRoute: typeof KontaktRoute
-  LojalitetRoute: typeof LojalitetRoute
   OmOssRoute: typeof OmOssRoute
 }
 
@@ -76,13 +66,6 @@ declare module '@tanstack/react-router' {
       path: '/om-oss'
       fullPath: '/om-oss'
       preLoaderRoute: typeof OmOssRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/lojalitet': {
-      id: '/lojalitet'
-      path: '/lojalitet'
-      fullPath: '/lojalitet'
-      preLoaderRoute: typeof LojalitetRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/kontakt': {
@@ -105,7 +88,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   KontaktRoute: KontaktRoute,
-  LojalitetRoute: LojalitetRoute,
   OmOssRoute: OmOssRoute,
 }
 export const routeTree = rootRouteImport
