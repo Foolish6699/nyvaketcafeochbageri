@@ -62,13 +62,6 @@ export function SiteHeader() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/kontakt"
-              onClick={() => setOpen(false)}
-              className="mt-2 text-center rounded-full bg-primary text-primary-foreground px-5 py-3 font-medium"
-            >
-              Boka bord
-            </Link>
           </nav>
         </div>
       )}
