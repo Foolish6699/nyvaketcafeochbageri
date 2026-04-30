@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { MapPin, Phone, Clock, Mail, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Facebook, Instagram } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
@@ -70,15 +70,26 @@ function ContactPage() {
               </div>
             </div>
 
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-3xl bg-card border border-border p-6 flex items-center gap-4 shadow-soft hover:bg-secondary transition"
-            >
-              <Facebook className="h-6 w-6 text-primary shrink-0" />
-              <span className="font-medium">Följ oss på Facebook</span>
-            </a>
+            <div className="grid sm:grid-cols-2 gap-3">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-3xl bg-card border border-border p-6 flex items-center gap-4 shadow-soft hover:bg-secondary transition"
+              >
+                <Facebook className="h-6 w-6 text-primary shrink-0" />
+                <span className="font-medium">Följ oss på Facebook</span>
+              </a>
+              <a
+                href="https://instagram.com/explore/locations/196258014433629/nyvaket-cafe-och-bageri/"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-3xl bg-card border border-border p-6 flex items-center gap-4 shadow-soft hover:bg-secondary transition"
+              >
+                <Instagram className="h-6 w-6 text-primary shrink-0" />
+                <span className="font-medium">Följ oss på Instagram</span>
+              </a>
+            </div>
           </div>
 
           <div className="rounded-3xl bg-cream border border-border p-6 sm:p-8 shadow-soft">
