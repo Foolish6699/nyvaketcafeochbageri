@@ -38,13 +38,6 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Link
-          to="/kontakt"
-          className="hidden md:inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2 text-sm font-medium shadow-soft hover:opacity-90 transition"
-        >
-          Boka bord
-        </Link>
-
         <button
           className="md:hidden p-2 -mr-2"
           onClick={() => setOpen(!open)}
