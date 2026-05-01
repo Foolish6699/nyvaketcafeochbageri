@@ -90,20 +90,27 @@ function Hero() {
             alt="Nyvaket Café & Bageri logotyp"
             className="mb-4 h-28 sm:h-36 lg:h-44 w-auto object-contain mix-blend-multiply opacity-95 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
           />
+        <div>
+          <img
+            src={nyvaketLogo}
+            alt="Nyvaket Café & Bageri logotyp"
+            className="mb-4 h-28 sm:h-36 lg:h-44 w-auto object-contain mix-blend-multiply opacity-95 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
+          />
           <div className="relative">
             <div className="absolute -inset-6 bg-gradient-cinnamon opacity-20 blur-3xl rounded-full" />
             <img
               src={heroImg}
-            alt="Färska kanelbullar och bakverk på disken hos Nyvaket Café"
-            width={1920}
-            height={1280}
-            className="relative rounded-3xl shadow-warm w-full h-[480px] sm:h-[560px] object-cover"
-          />
-          <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-2xl shadow-soft p-5 max-w-[240px] hidden sm:block">
-            <p className="font-display text-lg font-semibold leading-tight">
-              "The best fika and atmosphere!"
-            </p>
-            <p className="mt-2 text-xs text-muted-foreground">— Gäst på Google</p>
+              alt="Färska kanelbullar och bakverk på disken hos Nyvaket Café"
+              width={1920}
+              height={1280}
+              className="relative rounded-3xl shadow-warm w-full h-[480px] sm:h-[560px] object-cover"
+            />
+            <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-2xl shadow-soft p-5 max-w-[240px] hidden sm:block">
+              <p className="font-display text-lg font-semibold leading-tight">
+                "The best fika and atmosphere!"
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground">— Gäst på Google</p>
+            </div>
           </div>
         </div>
       </div>
