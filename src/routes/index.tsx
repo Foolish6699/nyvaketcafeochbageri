@@ -84,12 +84,6 @@ function Hero() {
           </div>
         </div>
 
-        <div className="relative">
-          <img
-            src={nyvaketLogo}
-            alt="Nyvaket Café & Bageri logotyp"
-            className="mb-4 h-28 sm:h-36 lg:h-44 w-auto object-contain mix-blend-multiply opacity-95 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
-          />
         <div>
           <img
             src={nyvaketLogo}
