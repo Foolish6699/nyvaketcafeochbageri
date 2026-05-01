@@ -55,12 +55,7 @@ function Hero() {
           <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium text-secondary-foreground">
             <Sparkles className="h-3.5 w-3.5" /> Sedan 2018 · Södertälje
           </span>
-          <img
-            src={nyvaketLogo}
-            alt="Nyvaket Café & Bageri logotyp"
-            className="mt-6 mb-2 h-32 sm:h-40 lg:h-48 w-auto object-contain mix-blend-multiply opacity-95 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
-          />
-          <h1 className="mt-2 font-display text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[0.95] text-balance">
+          <h1 className="mt-5 font-display text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[0.95] text-balance">
             Doften av <em className="text-primary not-italic">nybakat</em> väntar på dig.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-lg text-balance">
@@ -90,9 +85,15 @@ function Hero() {
         </div>
 
         <div className="relative">
-          <div className="absolute -inset-6 bg-gradient-cinnamon opacity-20 blur-3xl rounded-full" />
           <img
-            src={heroImg}
+            src={nyvaketLogo}
+            alt="Nyvaket Café & Bageri logotyp"
+            className="mb-4 h-28 sm:h-36 lg:h-44 w-auto object-contain mix-blend-multiply opacity-95 [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
+          />
+          <div className="relative">
+            <div className="absolute -inset-6 bg-gradient-cinnamon opacity-20 blur-3xl rounded-full" />
+            <img
+              src={heroImg}
             alt="Färska kanelbullar och bakverk på disken hos Nyvaket Café"
             width={1920}
             height={1280}
