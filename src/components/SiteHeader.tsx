@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import nyvaketLogo from "@/assets/nyvaket-logo.png";
 
 const links = [
   { to: "/", label: "Hem" },
@@ -15,9 +16,11 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center group" aria-label="Nyvaket Café — hem">
-          <span className="font-display text-2xl sm:text-3xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-primary">
-            Nyvaket
-          </span>
+          <img
+            src={nyvaketLogo}
+            alt="Nyvaket Café logotyp"
+            className="h-14 w-auto object-contain transition-transform group-hover:scale-105"
+          />
         </Link>
 
         <nav className="hidden md:flex items-center gap-1">
