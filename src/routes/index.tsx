@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Star, Award, Heart, MapPin, Clock, ArrowRight, Coffee, Cake, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { Newsletter } from "@/components/Newsletter";
+
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import nyvaketLogo from "@/assets/nyvaket-logo.png";
