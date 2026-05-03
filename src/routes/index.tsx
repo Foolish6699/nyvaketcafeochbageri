@@ -3,7 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { Star, Award, Heart, MapPin, Clock, ArrowRight, Coffee, Cake, Sparkles } from "lucide-react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { Newsletter } from "@/components/Newsletter";
+
 import { PhotoGallery } from "@/components/PhotoGallery";
 import heroImg from "@/assets/hero-cafe.jpg";
 import nyvaketLogo from "@/assets/nyvaket-logo.png";
@@ -224,8 +224,7 @@ function Reviews() {
 function NewsletterSection() {
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
-      <Newsletter />
-      <div className="mt-10 grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         <div className="rounded-3xl bg-card border border-border p-6 flex items-start gap-4">
           <MapPin className="h-6 w-6 text-primary shrink-0" />
           <div>
