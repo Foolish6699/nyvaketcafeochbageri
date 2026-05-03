@@ -224,8 +224,7 @@ function Reviews() {
 function NewsletterSection() {
   return (
     <section className="mx-auto max-w-7xl px-5 sm:px-8 py-20">
-      <Newsletter />
-      <div className="mt-10 grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         <div className="rounded-3xl bg-card border border-border p-6 flex items-start gap-4">
           <MapPin className="h-6 w-6 text-primary shrink-0" />
           <div>
