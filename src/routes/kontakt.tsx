@@ -72,7 +72,7 @@ function ContactPage() {
 
             <div className="grid sm:grid-cols-2 gap-3">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Nyvaket-caf%C3%A9-och-bageri/100063675725977/"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-3xl bg-card border border-border p-6 flex items-center gap-4 shadow-soft hover:bg-secondary transition"
